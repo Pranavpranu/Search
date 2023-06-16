@@ -7,21 +7,21 @@
         width: 300px;
         margin: 0 auto;
         margin-top: 200px;
-        background-color: white;
-        opacity:0.3;
+        background-color:aqua;
+        opacity:0.9;
         padding: 20px;
         border-radius: 30px;
         box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
         }
 
         .container h1 {
-            text-align: center;
+            text-align:center;
             color: black;
         }
 
-        .container h12 {
+        .container h4 {
             text-align: left;
-            color: red;
+            color:navy;
         }
 
         .container input[type="text"],
@@ -69,7 +69,7 @@
             var username = document.getElementById("user").value;
             var password = document.getElementById("pass").value;
 
-            if (password === "gpt130") {
+            if (password === "PRANAV") {
                 window.location.href = "sea.html";
             } else {
                 alert("Invalid username or password.");
@@ -94,13 +94,14 @@
     <h1>Login</h1>
 
     <form onsubmit="return validateForm()">
-        <input type="text" id="user" placeholder="Username" required>
-        <input type="password" id="pass" placeholder="Password" required>
+        <input type="text" id="user" placeholder="type your name" required>
+        <input type="password" id="pass" placeholder="Password is PRANAV" required>
         <input type="submit" value="Login">
-        <h12>Developed by pranav©</h12>
+        <h4>Developed by pranavprabhu©</h4>
 
         
     </form>
 </div>
 </body>
 </html>
+
