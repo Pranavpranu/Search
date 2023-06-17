@@ -1,11 +1,18 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>My Search Engine</title>
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<title>My Search Engine</title>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>
 	
+	
+   marquee {
+   color: #b3b3b3;
+   
+   
+   }
+ 
 	
 		body {
 		    
@@ -13,30 +20,26 @@
 			font-family: Arial, sans-serif;
 		}
 		
-		h12 {
-		text-align:center;
-		color:silver;
-		}
-		 
-
+	
+	
 		.container {
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			height: 50vh;
 		}
-
+	
 		form {
 			width: 88%;
 			max-width: 500px;
 			text-align: center;
 		}
-
+	
 		label {
 			color: white; /* Google blue */
 			font-size: 18px;
 		}
-
+	
 		input[type=text] {
 			padding: 10px;
 			border-radius: 5px;
@@ -47,11 +50,11 @@
 			color:orange; /* Google blue */
 			background-color:  black; /* Light gray */
 		}
-
+	
 		input[type=text]::placeholder {
 			color: grey; /* Gray */
 		}
-
+	
 		button[type=submit] {
 			background-color: black; /* Google blue */
 			color: white;
@@ -63,7 +66,7 @@
 			font-weight: bold;
 				transition: background-color 0.3s ease-in-out;
 		}
-
+	
 		button[type=submit]:hover {
 			background-color: orange; /* Darker Google blue */
 		}
@@ -83,7 +86,7 @@
 		object-fit: cover;
 		}
 	</style>
-	<h12>Developed by Pranavprabhu©</h12>
+	<marquee scrollamount="10"> Developed by Pranavprabhu©</marquee>
 	<script>
 	// Make the video element fill the screen
 	function resizeVideo() {
@@ -98,13 +101,13 @@
 	window.addEventListener('resize', resizeVideo);
 	resizeVideo();
 	</script>
-</head>
-<body>
-<div id="video-container">
-     <video id="video-element" autoplay loop muted>
-         <source src="ora.mp4" type="video/mp4">
-     </video>
- </div>
+	</head>
+	<body>
+	<div id="video-container">
+	 <video id="video-element" autoplay loop muted>
+	     <source src="ora.mp4" type="video/mp4">
+	 </video>
+	</div>
 	<div class="container">
 		<form action="https://www.google.com/search" method="GET">
 			<label for="search"></label>
@@ -113,5 +116,5 @@
 			<button type="submit">Search</button>
 		</form>
 	</div>
-</body>
-</html>
+	</body>
+	</html>
